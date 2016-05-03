@@ -1,0 +1,26 @@
+messenger
+sudo ruby ./RestEggAudioAlerts.rb -m 1 -n 0.50 -e uWrJd9EFpm7VVe3uaK2TawYKPTx3WR@api.pushover.net -v
+
+sudo ruby ./RestEggAudioAlerts.rb -m 1 -n 0.30 -e uWrJd9EFpm7VVe3uaK2TawYKPTx3WR@api.pushover.net -v
+
+
+
+Sound card test
+cat /proc/asound/cards
+
+tester
+sudo ruby ./RestEggAudioAlerts.rb -t 1 -v
+
+shutdown
+sudo shutdown -h now
+
+Copy noised.pid
+sudo cp ~/Desktop/noised.pid /etc/noised/
+
+
+sudo ruby ./noise_detection.rb
+
+curl -L https://get.rvm.io | bash -s stable --ruby
+
+source /home/pi/.rvm/scripts/rvm
+
